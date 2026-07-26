@@ -6,7 +6,10 @@
 (function () {
   "use strict";
 
-  var FORM_ENDPOINT = "/api/pilot-signup";
+  /* 试点申请表单提交地址（隧道 API）。
+     当前为 trycloudflare 临时隧道；生产域名上线后改为生产域名地址。
+     注意：隧道重启后 URL 会变，需同步更新此处并重新部署。 */
+  var FORM_ENDPOINT = "https://prediction-sip-varying-food.trycloudflare.com/api/pilot-signup";
   /* 降级联系方式占位符 —— 上线前替换为真实邮箱 */
   var FALLBACK_EMAIL = "【邮箱】";
 
