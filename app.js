@@ -10,8 +10,8 @@
      当前为 trycloudflare 临时隧道；生产域名上线后改为生产域名地址。
      注意：隧道重启后 URL 会变，需同步更新此处并重新部署。 */
   var FORM_ENDPOINT = "https://prediction-sip-varying-food.trycloudflare.com/api/pilot-signup";
-  /* 降级联系方式占位符 —— 上线前替换为真实邮箱 */
-  var FALLBACK_EMAIL = "【邮箱】";
+  /* 表单提交失败时的降级联系方式（mailto 回退） */
+  var FALLBACK_EMAIL = "107678274@qq.com";
 
   var form = document.getElementById("pilot-form");
   if (!form) return;
